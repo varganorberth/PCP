@@ -1,0 +1,121 @@
+:root {
+  --orange: #EF5A2A;
+  --blue: #025497;
+  --green: #006729;
+  --purple: #660066;
+  --darkGrey: #596172;
+  --grey: #949FB7;
+  --lightGrey: #F6F6F6;
+  --black: #0C0C0C;
+  --white: #FFFFFF;
+
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.mr-05 {
+  margin-right: 0.5rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-05 {
+  margin-bottom: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+.pl-1 {
+  padding-left: 1rem;
+}
+.pr-1 {
+  padding-right: 1rem;
+}
+.pl-05 {
+  padding-left: 0.5rem;
+}
+.pr-05 {
+  padding-right: 0.5rem;
+}
+.w-50 {
+  width: 50%;
+}
+.w-100 {
+  width: 100%;
+}
+.relative {
+  position: relative;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--darkGrey);
+}
+
+input, textarea, select {
+  padding: 0.75rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid var(--grey);
+  color: var(--darkGrey);
+  font-family: "Montserrat", sans-serif;
+  resize: vertical;
+}
+textarea {
+  resize: none;
+  height: auto;
+  overflow: hidden;
+}
+select {
+  margin-bottom: 5px;
+}
+input:focus, textarea:focus {
+  outline: 1px solid var(--grey);;
+}

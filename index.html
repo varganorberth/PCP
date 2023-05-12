@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="extras.css">
+  <link rel="stylesheet" href="print.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,900;1,500;1,600;1,800;1,900&family=PT+Sans:ital@1&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="page-title-wrapper">
+      <img class="swift-logo" src="https://swaggerdemo.file.force.com/servlet/servlet.ImageServer?id=0155e000001wbZt&oid=00D5e000004gC8f&lastMod=1648816309000" alt="Swift Logo">
+      <h1 class="page-title">New Pre-Call Plan</h1>
+    </div>
+    <section class="pcp-section orange-section">
+      <div class="section-title" bgcolor="#EF5A2A"style="background: #EF5A2A;">
+        <h2>Account, context and people</h2>
+      </div>
+      <div class="section-content">
+          <div class="d-flex justify-between">
+            <h3>Account context</h3>
+            <button class="btn orange">ASSIST</button>
+          </div>
+          <div class="lines">
+            <div class="line long-line"></div>
+            <div class="line short-line"></div>
+          </div>
+          <div class="d-flex justify-between">
+            <div class="form-group d-flex items-center w-50 pr-1 special-flex">
+              <h4 class="relative mr-05">Account <span class="extra-space">&nbsp; &nbsp;</span> :<img src="./icons/i.svg" class="info-icon orange" alt=""></h4>
+              <input type="text" name="account" id="account">
+            </div>
+            <div class="form-group d-flex items-center justify-between w-50 pl-1 special-flex">
+              <h4 class="relative mr-05">Meeting date:</h4>
+              <input type="date" id="meeting-date" name="meeting-date" onfocus="this.showPicker()">
+            </div>
+          </div>
+          <div class="form-group d-flex items-center justify-between mb-1 special-flex w-100">
+            <h4 class="relative mr-05">Strategic Objective <span class="extra-space">&nbsp; &nbsp;</span> :<img src="./icons/i.svg" class="info-icon orange" alt=""></h4>
+            <input type="text" name="strategic-objective" id="strategic-objective">
+          </div>
+
+          <div class="d-flex justify-between">
+            <div class="w-50 pr-1">
+              <div class="d-flex justify-between">
+                <h3>Meeting with</h3>
+                <button class="btn orange">ASSIST</button>
+              </div>
+              <div class="lines">
+                <div class="line long-line"></div>
+                <div class="line short-line"></div>
+              </div>
+              <div class="form-group d-flex items-center justify-between special-flex">
+                <h4 class="relative mr-05">Key Client Contact <span class="extra-space">&nbsp; &nbsp;</span>:<img src="./icons/i.svg" class="info-icon orange" alt=""></h4>
+                <input type="text" name="key-contact" id="key-contact">
+              </div>
+              <div class="form-group d-flex items-center justify-between special-flex">
+                <h4 class="relative mr-05">Other Client Contact <span class="extra-space">&nbsp; &nbsp;</span>:<img src="./icons/i.svg" class="info-icon orange" alt=""></h4>
+                <input type="text" name="other-contact" id="other-contact">
+              </div>
+            </div>
+  
+            <div class="w-50 pl-1">
+              <div class="d-flex justify-between">
+                <h3>Our team and roles</h3>
+                <button class="btn orange">ASSIST</button>
+              </div>
+              <div class="lines">
+                <div class="line long-line"></div>
+                <div class="line short-line"></div>
+              </div>
+              <div class="form-group d-flex items-center justify-between special-flex">
+                <h4 class="relative mr-05">Meeting lead <span class="extra-space">&nbsp; &nbsp;</span> :<img src="./icons/i.svg" class="info-icon orange" alt=""></h4>
+                <input type="text" name="meeting-lead" id="meeting-lead">
+              </div>
+              <div class="form-group d-flex items-center justify-between special-flex">
+                <h4 class="relative mr-05">2IC / Coach <span class="extra-space">&nbsp; &nbsp;</span> :<img src="./icons/i.svg" class="info-icon orange" alt=""></h4>
+                <input type="text" name="meeting-coach" id="meeting-coach">
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </section>
+
+    <section class="pcp-section blue-section">
+      <div class="section-title">
+        <h2>Leverage and meeting goals</h2>
+      </div>
+      <div class="section-content">
+        <div class="d-flex justify-between">
+          <div class="w-50 pr-1">
+            <div class="d-flex justify-between">
+              <h3>Key client contact motivation</h3>
+              <button class="btn blue">ASSIST</button>
+            </div>
+            <div class="lines">
+              <div class="line long-line"></div>
+              <div class="line short-line"></div>
+            </div>
+            <div class="form-group d-flex justify-between">
+              <h4 class="relative mr-05">Carrots <span class="extra-space">&nbsp; &nbsp;</span> :<img src="./icons/i.svg" class="info-icon blue" alt=""></h4>
+              <textarea name="carrots" maxlength="255" id="carrots" placeholder="Client's desires ( technical, operational, financial, personal)" ></textarea>
+            </div>
+            <div class="form-group d-flex justify-between">
+              <h4 class="relative mr-05">Sticks <span class="extra-space">&nbsp; &nbsp;</span> :<img src="./icons/i.svg" class="info-icon blue" alt=""></h4>
+              <textarea name="sticks" maxlength="255" id="sticks" placeholder="Client's pain points ( technical, operational, financial, personal)"></textarea>
+            </div>
+          </div>
+
+          <div class="w-50 pl-1">
+            <div class="d-flex justify-between">
+              <h3>Meeting Goals</h3>
+              <button class="btn blue">ASSIST</button>
+            </div>
+            <div class="lines">
+              <div class="line long-line"></div>
+              <div class="line short-line"></div>
+            </div>
+            <div class="form-group d-flex justify-between">
+              <h4 class="relative mr-05">Realistic Advance <span class="extra-space">&nbsp; &nbsp;</span> :<img src="./icons/i.svg" class="info-icon blue" alt=""></h4>
+              <textarea name="ra" rows="4" maxlength="500" id="ra" placeholder="Realistic outcome from this meeting?"></textarea>
+            </div>
+            <div class="form-group d-flex justify-between">
+              <h4 class="relative mr-05">Optimistic Advance <span class="extra-space">&nbsp; &nbsp;</span> :<img src="./icons/i.svg" class="info-icon blue" alt=""></h4>
+              <textarea name="oa" rows="4" maxlength="500" id="oa" placeholder="Optimistic  outcome from this meeting?"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pcp-section green-section">
+      <div class="section-title">
+        <h2>Game plan</h2>
+      </div>
+      <div class="">
+        <div class="tabs-block">
+          <div class="tabs">
+            <input type="radio" name="tabs" id="tab1" checked="checked" />
+            <label for="tab1">Launch</label>
+            <div class="tab section-content">
+              <div class="d-flex justify-between no-flex-on-print">
+                <div class="os-wrapper pr-1">
+                  <div class="d-flex justify-between">
+                    <h3>Opening Statement</h3>
+                    <button class="btn green">ASSIST</button>
+                  </div>
+                  <div class="lines">
+                    <div class="line long-line"></div>
+                    <div class="line short-line"></div>
+                  </div>
+                  <textarea name="opening" maxlength="1000" id="opening" class="form-group w-100"
+                  placeholder="Key points – credibility, summary, agenda, leverage, time check"></textarea>
+                </div>
+      
+                <div class="steps-wrapper pl-1">
+                  <div class="d-flex justify-between">
+                    <h3>Steps required in this meeting</h3>
+                    <button class="btn green">ASSIST</button>
+                  </div>
+                  <div class="lines">
+                    <div class="line long-line"></div>
+                    <div class="line short-line"></div>
+                  </div>
+                  <div class="form-group special-flex">
+                    <label class="container">Discover
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Propose
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Close
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <input type="radio" name="tabs" id="tab2" />
+            <label for="tab2">Discover</label>
+            <div class="tab section-content">
+              <div class="d-flex justify-between">
+                <div class="w-50 pr-1">
+                  <div class="d-flex justify-between">
+                    <h3>Ask (Top 3 questions)</h3>
+                    <button class="btn green">ASSIST</button>
+                  </div>
+                  <div class="lines">
+                    <div class="line long-line"></div>
+                    <div class="line short-line"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="q1" id="q1" class="w-100" placeholder="Question 1"></textarea>
+                    <textarea name="q2" id="q12" class="w-100" placeholder="Question 2"></textarea>
+                    <textarea name="q2" id="q2" class="w-100" placeholder="Question 3"></textarea>
+                  </div>
+                </div>
+      
+                <div class="w-50 pl-1">
+                  <div class="d-flex justify-between">
+                    <h3>Tell (Top 3 data points to share)</h3>
+                    <button class="btn green">ASSIST</button>
+                  </div>
+                  <div class="lines">
+                    <div class="line long-line"></div>
+                    <div class="line short-line"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="info-data1" id="info-data1" class="w-100" placeholder="Info or data to share 1"></textarea>
+                    <textarea name="info-data2" id="info-data12" class="w-100" placeholder="Info or data to share 2"></textarea>
+                    <textarea name="info-data2" id="info-data2" class="w-100" placeholder="Info or data to share 3"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <input type="radio" name="tabs" id="tab3" />
+            <label for="tab3">Propose</label>
+            <div class="tab section-content">
+              <div class="w-100">
+                <div class="d-flex justify-between">
+                  <h3>Draft proposal</h3>
+                  <button class="btn green">ASSIST</button>
+                </div>
+                <div class="lines">
+                  <div class="line long-line"></div>
+                  <div class="line short-line"></div>
+                </div>
+                <div class="form-group">
+                  <textarea name="draft-proposal" id="draft-proposal" class="w-100" placeholder="If you agree to XXX then we would agree to YYY. (Engage as an equal – proposals should require a commitment or action from both parties)"></textarea>
+                </div>
+              </div>
+            </div>
+    
+            <input type="radio" name="tabs" id="tab4" />
+            <label for="tab4"> Close</label>
+            <div class="tab section-content">
+              <div class="w-100">
+                <div class="d-flex justify-between">
+                  <h3>Top 3 Objections</h3>
+                  <button class="btn green">ASSIST</button>
+                </div>
+                <div class="lines">
+                  <div class="line long-line"></div>
+                  <div class="line short-line"></div>
+                </div>
+                <div class="form-group d-flex special-flex">
+                  <div class="objection-wrapper pr-05">
+                    <h4 class="mb-05">Objection</h4>
+                    <textarea name="objection1" id="objection1" class="w-100 objection" maxlength="255" placeholder="OBJ1 – e.g. Too expensive/not worth it"></textarea>
+                    <textarea name="objection2" id="objection12" class="w-100 objection" maxlength="255" placeholder="OBJ 2 – e.g. Too difficult"></textarea>
+                    <textarea name="objection2" id="objection2" class="w-100 objection" maxlength="255" placeholder="OBJ3 – e.g. Lack of authority or budget"></textarea>
+                  </div>
+                  <div class="strategy-wrapper pr-05 pl-05">
+                    <h4 class="mb-05">Strategy</h4>
+
+                    <select name="strategy" id="strategy" class="strategy"> 
+                      <option value="" selected disabled hidden>Select an option</option>
+                      <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
+                      <option value="Educate/Inform">Educate/Inform</option>
+                      <option value="Trade Mutual Value">Trade Mutual Value</option>
+                      <option value="Take a bet">Take a bet</option>
+                      <option value="Frame within client goals">Frame within client goals</option>
+                    </select><br>
+
+                    <select name="strategy" id="strategy2" class="strategy">
+                      <option value="" selected disabled hidden>Select an option</option>
+                      <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
+                      <option value="Educate/Inform">Educate/Inform</option>
+                      <option value="Trade Mutual Value">Trade Mutual Value</option>
+                      <option value="Take a bet">Take a bet</option>
+                      <option value="Frame within client goals">Frame within client goals</option>
+                    </select><br>
+
+                    <select name="strategy" id="strategy3" class="strategy">
+                      <option value="" selected disabled hidden>Select an option</option>
+                      <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
+                      <option value="Educate/Inform">Educate/Inform</option>
+                      <option value="Trade Mutual Value">Trade Mutual Value</option>
+                      <option value="Take a bet">Take a bet</option>
+                      <option value="Frame within client goals">Frame within client goals</option>
+                    </select>
+                  </div>
+
+                  <div class="notes-wrapper pl-05">
+                    <h4 class="mb-05">Notes</h4>
+                    <textarea name="notes1" id="notes1" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
+                    <textarea name="notes2" id="notes12" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
+                    <textarea name="notes2" id="notes2" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="pcp-section purple-section">
+      <div class="section-title">
+        <h2>ReviewS</h2>
+      </div>
+      <div class="section-content">
+
+      </div>
+    </section> -->
+    <input type="button" value="Generate PDF" onclick="GeneratePdf()" class="btn"/>
+    <!-- <button class="btn" id="printButton" onclick="print()">Generate PDF</button>  -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

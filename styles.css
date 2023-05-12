@@ -1,0 +1,323 @@
+
+.wrapper {
+  margin: 2rem;
+}
+
+.page-title-wrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.swift-logo {
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-right: 0.7rem;
+}
+
+.pcp-section {
+  margin-bottom: 15px;
+}
+
+.orange-section {
+  border: 1px solid var(--orange);
+}
+
+.blue-section {
+  border: 1px solid var(--blue);
+}
+
+.green-section {
+  border: 1px solid var(--green);
+}
+
+.purple-section {
+  border: 1px solid var(--purple);
+}
+
+.section-title {
+  padding: 0.7rem;
+}
+
+.orange-section .section-title {
+  background-color: var(--orange);
+}
+
+.blue-section .section-title {
+  background-color: var(--blue);
+}
+
+.green-section .section-title {
+  background-color: var(--green);
+}
+
+.purple-section .section-title {
+  background-color: var(--purple);
+}
+
+.section-title h2 {
+  color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-content {
+  padding: 1rem;
+}
+.lines {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-top: 4px;
+}
+
+.line {
+  height: 1.4px;
+  background-color: var(--black);
+}
+.long-line {
+  width: 100%;
+  /* margin-bottom: 4px; */
+}
+
+.short-line {
+  width: 3rem;
+  margin-top: 4px;
+}
+
+.btn {
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.8rem;
+  background-color: transparent;
+  border: 2px solid var(--grey);
+  color: var(--grey);
+  text-transform: uppercase;
+}
+.btn.orange {
+  border: 2px solid var(--orange);
+  color: var(--orange);
+}
+.btn.blue {
+  border: 2px solid var(--blue);
+  color: var(--blue);
+}
+.btn.green {
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+
+.info-icon {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+}
+
+.info-icon.orange {
+   fill: var(--orange);
+}
+.info-icon.blue {
+  fill: var(--blue);
+}
+.info-icon.green {
+  fill: var(--green);
+}
+
+#account {
+  width: calc( 100% - 7.5rem );
+}
+#meeting-date {
+  width: calc( 100% - 8.7rem );
+}
+#strategic-objective {
+  width: calc( 100% - 14.2rem );
+}
+
+#other-contact, #key-contact {
+  width: calc( 100% - 15.3rem );
+}
+#meeting-lead, #meeting-coach, #meeting-date {
+  width: calc( 100% - 10.2rem );
+}
+/* #carrots, #sticks, #oa, #ra {
+  min-height: 6rem;
+} */
+#opening, #draft-proposal {
+  min-height: 8rem;
+}
+#carrots, #sticks {
+  width: calc( 100% - 7.3rem );
+}
+#ra, #oa {
+  width: calc( 100% - 13.8rem );
+}
+.form-group {
+  margin-top: 0.8rem;
+}
+.objection, .strategy, .notes {
+  height: 3rem;
+}
+.objection-wrapper, .notes-wrapper {
+  width: calc( 50% - 7.5rem);
+}
+.strategy-wrapper {
+  width: 15rem;
+}
+.strategy-wrapper select {
+  width: 14rem;
+}
+.os-wrapper, .steps-wrapper {
+  width: 50%;
+}
+
+a,
+a:visited {
+  /* background-color: transparent; */
+  color: #0067b8;
+  text-decoration: none;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--lightGrey);
+
+}
+
+.tabs label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  margin-right: 0.0625rem;
+  cursor: pointer;
+  background-color: var(--lightGrey);
+  color: var(--black);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tabs label .material-icons {
+  margin-right: 0.3rem;
+}
+
+.tabs .tab {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: var(--white);
+}
+
+
+.tabs [type=radio] {
+  display: none;
+}
+
+.tabs [type=radio]:checked + label {
+  border-bottom: 4px solid var(--green);
+  color: var(--green);
+}
+
+.tabs [type=radio]:checked + label + .tab {
+  display: block;
+}
+
+.tabs label.container {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 5px 5px 5px 40px;
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: 0.3rem;
+}
+.tabs label.container:last-child {
+  margin: 0;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  height: 25px;
+  width: 25px;
+  background-color: var(--lightGrey);
+  border: 0.5px solid var(--grey);
+  border-radius: 3px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--green);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+input:-internal-autofill-selected {
+  background-color: var(--white);
+}
+
+@media (min-width: 768px) {
+
+  body {
+    font-size: 1.125rem;
+  }
+
+  .tabs label {
+    order: 1;
+    width: auto;
+  }
+
+  .tabs .tab {
+    order: 9;
+  }
+}
+@media (min-width: 992px) {
+
+}

@@ -1,0 +1,129 @@
+@media print {
+  @page {
+    size: A4 portrait;
+    margin:1cm;
+  }
+  body, * { font-family: 'Helvetica', 'Arial', sans-serif; }
+  h1 { font-size: 1.3rem; }
+  h2, .tabs label { font-size: 1.1rem; }
+  h3 { font-size: 0.9rem; }
+  h4, input, textarea { font-size: 0.7rem; }
+  p { font-size: 0.6rem; }
+  .wrapper { margin: 0rem }
+  .btn, .extra-space, .info-icon {
+    display: none;
+  }
+  input, textarea, select {
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 0.3rem;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+  #carrots, #sticks, #oa, #ra {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .form-group { 
+    display: block;
+  }
+
+  ::-webkit-input-placeholder { 
+    color: transparent;
+  }
+  :-moz-placeholder { 
+      color: transparent;
+  }
+  ::-moz-placeholder { 
+      color: transparent;
+  }
+  :-ms-input-placeholder { 
+      color: transparent;
+  }
+  ::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+  ::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+  ::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+      color: transparent;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+}
+  .orange-section .section-title {
+    -webkit-print-color-adjust: exact; 
+    background-color: var(--orange) !important;
+  }
+  .blue-section .section-title {
+    -webkit-print-color-adjust: exact; 
+    background-color: var(--blue) !important;
+  }
+  .green-section .section-title {
+    -webkit-print-color-adjust: exact; 
+    background-color: var(--green) !important;
+  }
+
+  .tabs label {
+    border-bottom: 4px solid var(--green);
+    color: var(--green);
+  }
+
+  .special-flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .no-flex-on-print {
+    display: block;
+  }
+  #account, #meeting-date, #other-contact, #key-contact, #meeting-lead, #meeting-coach {
+    width: auto ;
+  }
+  #strategic-objective {
+    width: calc( 100% - 9rem );
+    /* width: 100%; */
+  }
+  .tabs .tab {
+    display: block !important;
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: var(--green);
+    -webkit-print-color-adjust: exact; 
+  }
+
+  .objection, .notes { 
+    height: auto;
+  }
+
+  .strategic-objective {
+    width: auto;
+  }
+ .form-group {
+    margin: 0!important;
+  }
+  h4.mr-05 {
+    margin: 0;
+  }
+  .os-wrapper, .steps-wrapper {
+    width: 100%;
+  }
+  .steps-wrapper .special-flex {
+    gap: 10px;
+  }
+  .steps-wrapper .container {
+    height: 35px;
+  }
+  .tabs label {
+    padding: 0.5rem;
+  }
+  .objection-wrapper,.notes-wrapper {
+    width: 35%;
+  }
+  .strategy-wrapper {
+    width: 30%;
+  }
+}
