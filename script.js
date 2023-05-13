@@ -14,3 +14,18 @@ function OnInput() {
 function GeneratePdf() {
   window.print();
 }
+
+
+// const overlays = document.querySelectorAll(".overlay");
+// for (let i = 0; i < overlays.length; i++) {
+
+//   overlays[i].addEventListener("input", OnInput, false);
+// }
+
+function on() {
+  document.querySelector(".overlay").style.display = "flex";
+}
+
+function off() {
+  document.querySelector(".overlay").style.display = "none";
+}

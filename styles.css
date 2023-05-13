@@ -109,6 +109,10 @@
   border: 2px solid var(--green);
   color: var(--green);
 }
+.btn.grey {
+  border: 2px solid var(--darkGrey);
+  color: var(--darkGrey);
+}
 
 .info-icon {
   position: absolute;
