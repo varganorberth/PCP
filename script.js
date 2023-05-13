@@ -16,16 +16,27 @@ function GeneratePdf() {
 }
 
 
-// const overlays = document.querySelectorAll(".overlay");
-// for (let i = 0; i < overlays.length; i++) {
 
-//   overlays[i].addEventListener("input", OnInput, false);
-// }
+const triggers = document.querySelectorAll('.overlay-trigger');
+const overlays = document.querySelectorAll('.overlay');
 
-function on() {
-  document.querySelector(".overlay").style.display = "flex";
+function showOverlay(event) {
+  const selector = event.target.value;
+  const overlay = document.getElementById(selector);
+  if (overlay !== null) {
+    overlay.style.display = "flex";
+  }
 }
 
-function off() {
-  document.querySelector(".overlay").style.display = "none";
+for (const trigger of triggers) {
+  trigger.addEventListener('click', showOverlay);
+}
+
+function closeOverlay(event) {
+  const overlay = event.currentTarget;
+  overlay.style.display = "none";
+}
+
+for (const overlay of overlays) {
+  overlay.addEventListener('click', closeOverlay);
 }

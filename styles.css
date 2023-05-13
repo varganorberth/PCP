@@ -87,6 +87,7 @@
 }
 
 .btn {
+  cursor: pointer; 
   border-radius: 2rem;
   padding: 0.3rem 1rem;
   font-style: italic;
@@ -97,6 +98,7 @@
   color: var(--grey);
   text-transform: uppercase;
 }
+
 .btn.orange {
   border: 2px solid var(--orange);
   color: var(--orange);
