@@ -20,7 +20,7 @@
       <h1 class="page-title">New Pre-Call Plan</h1>
     </div>
     <section class="pcp-section orange-section">
-      <div class="section-title" bgcolor="#EF5A2A"style="background: #EF5A2A;">
+      <div class="section-title" bgcolor="#EF5A2A" style="background: #EF5A2A;">
         <h2>Account, context and people</h2>
       </div>
       <div class="section-content">
@@ -127,11 +127,11 @@
             </div>
             <div class="form-group d-flex justify-between">
               <h4 class="relative mr-05">Realistic Advance <span class="extra-space">&nbsp; &nbsp;</span> :<img src="./icons/i.svg" class="info-icon blue" alt=""></h4>
-              <textarea name="ra" rows="4" maxlength="500" id="ra" placeholder="Realistic outcome from this meeting?"></textarea>
+              <textarea name="ra" maxlength="500" id="ra" placeholder="Realistic outcome from this meeting?"></textarea>
             </div>
             <div class="form-group d-flex justify-between">
               <h4 class="relative mr-05">Optimistic Advance <span class="extra-space">&nbsp; &nbsp;</span> :<img src="./icons/i.svg" class="info-icon blue" alt=""></h4>
-              <textarea name="oa" rows="4" maxlength="500" id="oa" placeholder="Optimistic  outcome from this meeting?"></textarea>
+              <textarea name="oa" maxlength="500" id="oa" placeholder="Optimistic  outcome from this meeting?"></textarea>
             </div>
           </div>
         </div>
@@ -257,51 +257,60 @@
                   <div class="line long-line"></div>
                   <div class="line short-line"></div>
                 </div>
-                <div class="form-group d-flex special-flex">
-                  <div class="objection-wrapper pr-05">
-                    <h4 class="mb-05">Objection</h4>
-                    <textarea name="objection1" id="objection1" class="w-100 objection" maxlength="255" placeholder="OBJ1 – e.g. Too expensive/not worth it"></textarea>
-                    <textarea name="objection2" id="objection12" class="w-100 objection" maxlength="255" placeholder="OBJ 2 – e.g. Too difficult"></textarea>
-                    <textarea name="objection2" id="objection2" class="w-100 objection" maxlength="255" placeholder="OBJ3 – e.g. Lack of authority or budget"></textarea>
+                <div class="form-group">
+
+                  <div class="objection-row d-flex w-100">
+                    <h4 class="objection-heading">Objection</h4>
+                    <h4 class="strategy-heading">Strategy</h4>
+                    <h4 class="notes-heading">Notes</h4>
                   </div>
-                  <div class="strategy-wrapper pr-05 pl-05">
-                    <h4 class="mb-05">Strategy</h4>
-
-                    <select name="strategy" id="strategy" class="strategy"> 
-                      <option value="" selected disabled hidden>Select an option</option>
-                      <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
-                      <option value="Educate/Inform">Educate/Inform</option>
-                      <option value="Trade Mutual Value">Trade Mutual Value</option>
-                      <option value="Take a bet">Take a bet</option>
-                      <option value="Frame within client goals">Frame within client goals</option>
-                    </select><br>
-
-                    <select name="strategy" id="strategy2" class="strategy">
-                      <option value="" selected disabled hidden>Select an option</option>
-                      <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
-                      <option value="Educate/Inform">Educate/Inform</option>
-                      <option value="Trade Mutual Value">Trade Mutual Value</option>
-                      <option value="Take a bet">Take a bet</option>
-                      <option value="Frame within client goals">Frame within client goals</option>
-                    </select><br>
-
-                    <select name="strategy" id="strategy3" class="strategy">
-                      <option value="" selected disabled hidden>Select an option</option>
-                      <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
-                      <option value="Educate/Inform">Educate/Inform</option>
-                      <option value="Trade Mutual Value">Trade Mutual Value</option>
-                      <option value="Take a bet">Take a bet</option>
-                      <option value="Frame within client goals">Frame within client goals</option>
-                    </select>
+                  <div class="objection-row d-flex w-100">
+                      <textarea name="objection1" id="objection1" class="w-100 objection" maxlength="255" placeholder="OBJ1 – e.g. Too expensive/not worth it"></textarea>
+                      <div>
+                        <select name="strategy1" id="strategy1" class="strategy"> 
+                          <option value="" selected disabled hidden>Select an option</option>
+                          <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
+                          <option value="Educate/Inform">Educate/Inform</option>
+                          <option value="Trade Mutual Value">Trade Mutual Value</option>
+                          <option value="Take a bet">Take a bet</option>
+                          <option value="Frame within client goals">Frame within client goals</option>
+                        </select>
+                      </div>
+                      <textarea name="notes1" id="notes1" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
                   </div>
 
-                  <div class="notes-wrapper pl-05">
-                    <h4 class="mb-05">Notes</h4>
-                    <textarea name="notes1" id="notes1" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
-                    <textarea name="notes2" id="notes12" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
+                  <div class="objection-row d-flex w-100">
+                    <textarea name="objection2" id="objection2" class="w-100 objection" maxlength="255" placeholder="OBJ 2 – e.g. Too difficult"></textarea>
+                    <div>
+                      <select name="strategy2" id="strategy2" class="strategy"> 
+                        <option value="" selected disabled hidden>Select an option</option>
+                        <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
+                        <option value="Educate/Inform">Educate/Inform</option>
+                        <option value="Trade Mutual Value">Trade Mutual Value</option>
+                        <option value="Take a bet">Take a bet</option>
+                        <option value="Frame within client goals">Frame within client goals</option>
+                      </select>
+                    </div>
                     <textarea name="notes2" id="notes2" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
+
+                  
                   </div>
 
+                  <div class="objection-row d-flex w-100">
+                    <textarea name="objection3" id="objection3" class="w-100 objection" maxlength="255" placeholder="OBJ3 – e.g. Lack of authority or budget"></textarea>
+                    <div>
+                      <select name="strategy3" id="strategy3" class="strategy"> 
+                        <option value="" selected disabled hidden>Select an option</option>
+                        <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
+                        <option value="Educate/Inform">Educate/Inform</option>
+                        <option value="Trade Mutual Value">Trade Mutual Value</option>
+                        <option value="Take a bet">Take a bet</option>
+                        <option value="Frame within client goals">Frame within client goals</option>
+                      </select>
+                    </div>
+                    <textarea name="notes3" id="notes3" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
+
+                  </div>
                 </div>
               </div>
             </div>

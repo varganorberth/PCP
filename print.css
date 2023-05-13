@@ -20,6 +20,7 @@
     padding: 0.3rem;
   }
   select {
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
@@ -55,14 +56,17 @@
     display: none;
 }
   .orange-section .section-title {
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact; 
     background-color: var(--orange) !important;
   }
   .blue-section .section-title {
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact; 
     background-color: var(--blue) !important;
   }
   .green-section .section-title {
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact; 
     background-color: var(--green) !important;
   }
@@ -91,12 +95,9 @@
   }
 
   .container input:checked ~ .checkmark {
-    background-color: var(--green);
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact; 
-  }
-
-  .objection, .notes { 
-    height: auto;
+    background-color: var(--green);
   }
 
   .strategic-objective {
@@ -110,6 +111,7 @@
   }
   .os-wrapper, .steps-wrapper {
     width: 100%;
+    padding: 0;
   }
   .steps-wrapper .special-flex {
     gap: 10px;
@@ -120,10 +122,17 @@
   .tabs label {
     padding: 0.5rem;
   }
-  .objection-wrapper,.notes-wrapper {
-    width: 35%;
+  .objection, .notes {
+    min-height: 3rem;
+    padding: 0;
   }
-  .strategy-wrapper {
-    width: 30%;
+  .objection-row textarea, .objection-row .objection-heading, .objection-row .notes-heading {
+    width: calc( 50% - 6rem);
+  }
+  .objection-row select, .objection-row .strategy-heading {
+    width: 12rem;
+  }
+  #opening, #draft-proposal {
+    min-height: auto;
   }
 }

@@ -145,8 +145,11 @@
 /* #carrots, #sticks, #oa, #ra {
   min-height: 6rem;
 } */
-#opening, #draft-proposal {
+#opening {
   min-height: 8rem;
+}
+#draft-proposal {
+  min-height: 6rem;
 }
 #carrots, #sticks {
   width: calc( 100% - 7.3rem );
@@ -157,18 +160,18 @@
 .form-group {
   margin-top: 0.8rem;
 }
-.objection, .strategy, .notes {
-  height: 3rem;
+
+.objection-row {
+  gap: 10px;
+  margin-bottom: 10px;
 }
-.objection-wrapper, .notes-wrapper {
-  width: calc( 50% - 7.5rem);
-}
-.strategy-wrapper {
-  width: 15rem;
-}
-.strategy-wrapper select {
+.objection-row select, .objection-row .strategy-heading {
   width: 14rem;
 }
+.objection-row textarea, .objection-row .objection-heading, .objection-row .notes-heading {
+  width: calc( 50% - 7rem);
+}
+
 .os-wrapper, .steps-wrapper {
   width: 50%;
 }
