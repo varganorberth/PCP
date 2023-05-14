@@ -337,9 +337,13 @@ input:-internal-autofill-selected {
   color: var(--white);
   padding: 1rem;
   text-transform: initial;
-  font-weight: 500;
+  font-weight: 300;
   z-index: 99;
   border-radius: 5px;
+}
+.helper-text.short {
+  width: auto;
+  white-space: nowrap;
 }
 .extra-space:hover:before {
   content: "";
