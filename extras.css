@@ -8,7 +8,7 @@
   --lightGrey: #F6F6F6;
   --black: #0C0C0C;
   --white: #FFFFFF;
-
+  --darkBlue: #032D60;
 }
 
 *, *::before, *::after {
@@ -98,6 +98,9 @@ h4 {
   font-size: 1rem;
   text-transform: uppercase;
   color: var(--darkGrey);
+}
+p {
+  font-size: 0.7rem;
 }
 
 input, textarea, select {
