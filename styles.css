@@ -386,3 +386,10 @@ input:-internal-autofill-selected {
 .extra-space:hover .helper-text {
   visibility: visible;
 }
+.generate-wrapper {
+  background-color: var(--lightGrey);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
