@@ -143,7 +143,9 @@
   border: 2px solid var(--darkGrey);
   color: var(--darkGrey);
 }
-
+.btn.grey:hover {
+  background-color: var(--white);
+}
 
 .info-icon.orange {
    fill: var(--orange);

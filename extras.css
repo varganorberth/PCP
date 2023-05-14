@@ -28,7 +28,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 main {
-  min-height: calc( 100vh - 7rem );
+  min-height: calc( 100vh - 10rem );
 }
 
 .d-flex {
@@ -44,6 +44,9 @@ main {
 }
 .items-center {
   align-items: center;
+}
+.m-2 {
+  margin: 2rem;
 }
 .mr-05 {
   margin-right: 0.5rem;
@@ -117,6 +120,7 @@ input, textarea, select {
   color: var(--darkGrey);
   font-family: "Montserrat", sans-serif;
   resize: vertical;
+  min-height: 2.7rem;
 }
 textarea {
   resize: none;
@@ -148,7 +152,7 @@ input:focus, textarea:focus {
 
 footer {
   text-align: center;
-  height: 5rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
