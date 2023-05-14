@@ -37,6 +37,7 @@
 
 .section-title {
   padding: 0.7rem;
+  cursor: pointer;
 }
 
 .orange-section .section-title {
@@ -62,8 +63,36 @@
 }
 
 .section-content {
-  padding: 1rem;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
 }
+.pcp-section.open .section-content {
+  height: auto;
+  overflow: visible;
+  padding: 1rem;
+  
+}
+.pcp-section.open .section-content.p-0{
+  padding: 0;
+}
+.pcp-section.open .arrow-wrapper img {
+  transform: rotate(90deg);
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+}
+.arrow-wrapper img {
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+}
+.arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .lines {
   width: 100%;
   display: flex;
@@ -116,11 +145,6 @@
   color: var(--darkGrey);
 }
 
-/* .info-icon {
-  position: absolute;
-  right: 8px;
-  top: 4px;
-} */
 
 .info-icon.orange {
    fill: var(--orange);
@@ -194,7 +218,9 @@ a:visited {
   flex-wrap: wrap;
   width: 100%;
   background-color: var(--lightGrey);
-
+}
+.tab {
+  padding: 1rem;
 }
 
 .tabs label {

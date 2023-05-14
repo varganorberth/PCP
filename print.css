@@ -135,4 +135,7 @@
   #opening, #draft-proposal {
     min-height: auto;
   }
+  .arrow-wrapper {
+    display: none;
+  }
 }
