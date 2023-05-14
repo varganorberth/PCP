@@ -27,6 +27,9 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+main {
+  min-height: calc( 100vh - 7rem );
+}
 
 .d-flex {
   display: flex;
@@ -127,7 +130,6 @@ input:focus, textarea:focus {
   outline: 1px solid var(--grey);;
 }
 
-
 .overlay {
   position: fixed; 
   display: none; 
@@ -142,4 +144,12 @@ input:focus, textarea:focus {
   cursor: pointer; 
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

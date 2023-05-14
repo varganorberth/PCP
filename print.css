@@ -138,4 +138,9 @@
   .arrow-wrapper {
     display: none;
   }
+  .pcp-section .section-content {
+    height: auto;
+    overflow: visible;
+    padding: 1rem;
+  }
 }
