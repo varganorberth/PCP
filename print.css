@@ -26,6 +26,10 @@
     text-indent: 1px;
     text-overflow: '';
   }
+
+  select option[disabled] {
+    display: none!important;
+  }
   #carrots, #sticks, #oa, #ra {
     width: 100%;
     height: auto;

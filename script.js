@@ -1,4 +1,6 @@
 
+
+
 const sectionsTitles = document.querySelectorAll('.section-title');
 for (let i = 0; i < sectionsTitles.length; i++) {
   sectionsTitles[i].addEventListener("click", openSection, false);

@@ -275,52 +275,58 @@
               <input type="radio" name="tabs" id="tab2" />
               <label for="tab2">Discover</label>
               <div class="tab">
-                <div class="d-flex justify-between">
-                  <div class="w-50 pr-1">
-                    <div class="d-flex justify-between">
-                      <h3>Ask (Top 3 questions)
-                        <span class="extra-space relative"><img src="./icons/i-green.svg" class="info-icon green" alt="More info icon">
-                          <p class="helper-text">Prioritize and distill the three most important questions to ask in this meeting. Focus on areas of leverage, where you can create and monetize value for the Client.</p></span>:
-                        </h3>
-                      <button class="btn green overlay-trigger" type="button" value="overlay-nine">ASSIST</button>
-                      <div class="overlay" id="overlay-nine">
-                        <iframe src="https://player.vimeo.com/video/809829612?h=ed0e500d9a" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <div class="">
+                  <div class="w-100 d-flex justify-between">
+                    <div class="discover-heading">
+                      <div class="d-flex justify-between">
+                        <h3>Ask (Top 3 questions)
+                          <span class="extra-space relative"><img src="./icons/i-green.svg" class="info-icon green" alt="More info icon">
+                            <p class="helper-text">Prioritize and distill the three most important questions to ask in this meeting. Focus on areas of leverage, where you can create and monetize value for the Client.</p></span>:
+                          </h3>
+                        <button class="btn green overlay-trigger" type="button" value="overlay-nine">ASSIST</button>
+                        <div class="overlay" id="overlay-nine">
+                          <iframe src="https://player.vimeo.com/video/809829612?h=ed0e500d9a" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="lines">
+                        <div class="line long-line"></div>
+                        <div class="line short-line"></div>
                       </div>
                     </div>
-                    <div class="lines">
-                      <div class="line long-line"></div>
-                      <div class="line short-line"></div>
-                    </div>
-                    <div class="form-group">
-                      <textarea name="q1" id="q1" class="w-100" placeholder="Question 1"></textarea>
-                      <textarea name="q2" id="q12" class="w-100" placeholder="Question 2"></textarea>
-                      <textarea name="q2" id="q2" class="w-100" placeholder="Question 3"></textarea>
-                    </div>
-                  </div>
-        
-                  <div class="w-50 pl-1">
-                    <div class="d-flex justify-between">
-                      <h3>Tell (Top 3 data points to share)
-                        <span class="extra-space relative"><img src="./icons/i-green.svg" class="info-icon green" alt="More info icon">
-                          <p class="helper-text">Prioritize and distill no more than 3 concise items of information or data to share with the Client in this meeting. Focus on information that gives you credibility /leverage and/or that manages Client expectations.</p></span>:
-                        </h3>
-                      <button class="btn green overlay-trigger" type="button" value="overlay-ten">ASSIST</button>
-                      <div class="overlay" id="overlay-ten">
-                        <iframe src="https://player.vimeo.com/video/809829256?h=5287f15ad1" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <div class="discover-heading">
+                      <div class="d-flex justify-between">
+                        <h3>Tell (Top 3 data points to share)
+                          <span class="extra-space relative"><img src="./icons/i-green.svg" class="info-icon green" alt="More info icon">
+                            <p class="helper-text">Prioritize and distill no more than 3 concise items of information or data to share with the Client in this meeting. Focus on information that gives you credibility /leverage and/or that manages Client expectations.</p></span>:
+                          </h3>
+                        <button class="btn green overlay-trigger" type="button" value="overlay-ten">ASSIST</button>
+                        <div class="overlay" id="overlay-ten">
+                          <iframe src="https://player.vimeo.com/video/809829256?h=5287f15ad1" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="lines">
+                        <div class="line long-line"></div>
+                        <div class="line short-line"></div>
                       </div>
                     </div>
-                    <div class="lines">
-                      <div class="line long-line"></div>
-                      <div class="line short-line"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="discver-row d-flex justify-between w-100 mb-1">
+                      <textarea name="q1" id="q1" placeholder="Question 1"></textarea>
+                      <textarea name="info-data1" id="info-data1" placeholder="Info or data to share 1"></textarea>
                     </div>
-                    <div class="form-group">
-                      <textarea name="info-data1" id="info-data1" class="w-100" placeholder="Info or data to share 1"></textarea>
-                      <textarea name="info-data2" id="info-data12" class="w-100" placeholder="Info or data to share 2"></textarea>
-                      <textarea name="info-data2" id="info-data2" class="w-100" placeholder="Info or data to share 3"></textarea>
+                    <div class="discver-row d-flex justify-between w-100 mb-1">
+                      <textarea name="q2" id="q2" placeholder="Question 2"></textarea>
+                      <textarea name="info-data2" id="info-data2" placeholder="Info or data to share 1"></textarea>
+                    </div>
+                    <div class="discver-row d-flex justify-between w-100">
+                      <textarea name="q3" id="q3" placeholder="Question 3"></textarea>
+                      <textarea name="info-data3" id="info-data3" placeholder="Info or data to share 3"></textarea>
                     </div>
                   </div>
-                </div>
               </div>
+            </div>
       
               <input type="radio" name="tabs" id="tab3" />
               <label for="tab3">Propose</label>

@@ -387,6 +387,15 @@ input:-internal-autofill-selected {
 .extra-space:hover .helper-text {
   visibility: visible;
 }
+
+.discver-row textarea, .discover-heading {
+  width: calc( 50% - 0.5rem);
+}
+
+
+
+
+
 .generate-wrapper {
   background-color: var(--lightGrey);
   padding: 1rem;
