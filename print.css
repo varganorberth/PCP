@@ -6,13 +6,11 @@
   body, * { font-family: 'Helvetica', 'Arial', sans-serif; }
   h1 { font-size: 1.3rem; }
   h2, .tabs label { font-size: 1.1rem; }
-  h3 { font-size: 0.9rem; }
-  h4, input, textarea,select, option { font-size: 0.7rem; }
+  h3, .checkboxes-wrapper label { font-size: 0.9rem; }
+  h4, input, textarea, select, option { font-size: 0.7rem; }
   p { font-size: 0.6rem; }
   .wrapper { margin: 0rem }
-  .btn, .extra-space, .info-icon {
-    display: none;
-  }
+  .btn, .extra-space, .info-icon { display: none; }
   input, textarea, select, option {
     outline: none;
     border: none;
@@ -78,6 +76,8 @@
     border-bottom: 4px solid var(--green);
     color: var(--green);
   }
+
+.checkboxes-wrapper label { color: var(--black);}
 
   .special-flex {
     display: flex;
@@ -154,5 +154,13 @@
     height: auto;
     overflow: visible;
     padding: 1rem;
+  }
+  .tabs label.container {
+    border: none;
+  }
+  footer {
+    display: block;
+    bottom: 0;
+    width:100%;
   }
 }
