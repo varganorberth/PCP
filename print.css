@@ -9,7 +9,7 @@
   h3, .checkboxes-wrapper label { font-size: 0.9rem; }
   h4, input, textarea, select, option { font-size: 0.7rem; }
   p { font-size: 0.6rem; }
-  .wrapper { margin: 0rem }
+  .wrapper { padding: 0rem }
   .btn, .extra-space, .info-icon { display: none; }
   input, textarea, select, option {
     outline: none;

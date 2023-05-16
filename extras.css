@@ -28,7 +28,8 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 main {
-  min-height: calc( 100vh - 10rem );
+  min-height: calc( 100vh - 6rem );
+  padding: 2rem;
 }
 
 .d-flex {
@@ -156,7 +157,7 @@ input:focus, textarea:focus {
 
 footer {
   text-align: center;
-  height: 8rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
