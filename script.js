@@ -4,7 +4,6 @@ function GeneratePdf() {
   window.print();
 }
 
-
 const sectionsTitles = document.querySelectorAll('.section-title');
 for (let i = 0; i < sectionsTitles.length; i++) {
   sectionsTitles[i].addEventListener("click", openSection, false);
@@ -22,8 +21,6 @@ function OnInput() {
   this.style.height = 0;
   this.style.height = (this.scrollHeight) + "px";
 }
-
-
 
 
 const triggers = document.querySelectorAll('.overlay-trigger');
