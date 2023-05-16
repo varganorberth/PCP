@@ -29,7 +29,6 @@ body {
 }
 main {
   min-height: calc( 100vh - 6rem );
-  padding: 2rem;
 }
 
 .d-flex {
