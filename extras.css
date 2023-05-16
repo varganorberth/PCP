@@ -119,8 +119,11 @@ input, textarea, select {
   border: 0.5px solid var(--grey);
   color: var(--darkGrey);
   font-family: "Montserrat", sans-serif;
-  resize: vertical;
-  min-height: 2.7rem;
+  /* min-height: 2.7rem; */
+  min-height: 42px;
+}
+input::placeholder, textarea::placeholder {
+  opacity: 0.5;
 }
 textarea {
   resize: none;

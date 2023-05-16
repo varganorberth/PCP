@@ -7,18 +7,20 @@
   h1 { font-size: 1.3rem; }
   h2, .tabs label { font-size: 1.1rem; }
   h3 { font-size: 0.9rem; }
-  h4, input, textarea { font-size: 0.7rem; }
+  h4, input, textarea,select, option { font-size: 0.7rem; }
   p { font-size: 0.6rem; }
   .wrapper { margin: 0rem }
   .btn, .extra-space, .info-icon {
     display: none;
   }
-  input, textarea, select {
+  input, textarea, select, option {
     outline: none;
     border: none;
     resize: none;
-    padding: 0.3rem;
+    padding: 0!important;
+    margin: 0!important;
   }
+
   select {
     appearance: none;
     -webkit-appearance: none;
@@ -27,9 +29,6 @@
     text-overflow: '';
   }
 
-  select option[disabled] {
-    display: none!important;
-  }
   #carrots, #sticks, #oa, #ra {
     width: 100%;
     height: auto;
@@ -58,7 +57,7 @@
   }
   ::-webkit-scrollbar {
     display: none;
-}
+  }
   .orange-section .section-title {
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact; 
@@ -83,6 +82,9 @@
   .special-flex {
     display: flex;
     justify-content: flex-start;
+  }
+  .special-flex.items-start {
+    align-items: flex-start;
   }
   .no-flex-on-print {
     display: block;
@@ -127,8 +129,14 @@
     padding: 0.5rem;
   }
   .objection, .notes {
-    min-height: 3rem;
+    /* min-height: 3rem; */
     padding: 0;
+    overflow: visible;
+  }
+  .objection-row {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
   }
   .objection-row textarea, .objection-row .objection-heading, .objection-row .notes-heading {
     width: calc( 50% - 6rem);
@@ -137,7 +145,7 @@
     width: 12rem;
   }
   #opening, #draft-proposal {
-    min-height: auto;
+    min-height: 0rem;
   }
   .arrow-wrapper {
     display: none;

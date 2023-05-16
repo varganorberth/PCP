@@ -173,11 +173,8 @@
   width: calc( 100% - 10.2rem );
 }
 
-#opening {
-  min-height: 8rem;
-}
-#draft-proposal {
-  min-height: 6rem;
+#opening, #draft-proposal {
+  min-height: 4rem;
 }
 #carrots, #sticks {
   width: calc( 100% - 7.3rem );
@@ -265,13 +262,13 @@ a, a:visited {
 .tabs label.container {
   display: block;
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 5px 5px 5px 40px;
+  padding: 4px 4px 4px 40px;
   background-color: transparent;
   border: 1px solid var(--green);
   border-radius: 0.3rem;
@@ -331,7 +328,7 @@ input:-internal-autofill-selected {
   background-color: var(--white);
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   body {
     font-size: 1.125rem;
   }
@@ -344,13 +341,13 @@ input:-internal-autofill-selected {
   .tabs .tab {
     order: 9;
   }
-} */
+} 
 
 .helper-text {
   position: absolute;
   visibility: hidden;
   bottom: calc( 100% + 5px );
-  width: 20rem;
+  width: 25rem;
   background-color: var(--darkBlue);
   color: var(--white);
   padding: 1rem;
