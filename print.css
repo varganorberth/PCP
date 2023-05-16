@@ -15,9 +15,10 @@
     outline: none;
     border: none;
     resize: none;
-    padding: 0!important;
-    margin: 0!important;
+    padding: 0;
+    margin: 0;
   }
+  input, #strategic-objective { margin-left: 0.2rem;}
 
   select {
     appearance: none;
@@ -90,11 +91,10 @@
     display: block;
   }
   #account, #meeting-date, #other-contact, #key-contact, #meeting-lead, #meeting-coach {
-    width: auto ;
+    width: auto;
   }
   #strategic-objective {
     width: calc( 100% - 9rem );
-    /* width: 100%; */
   }
   .tabs .tab {
     display: block !important;
@@ -129,7 +129,6 @@
     padding: 0.5rem;
   }
   .objection, .notes {
-    /* min-height: 3rem; */
     padding: 0;
     overflow: visible;
   }
@@ -159,8 +158,9 @@
     border: none;
   }
   footer {
-    display: block;
-    bottom: 0;
-    width:100%;
+    width: 100%;
+    height: 3rem;
   }
+  footer br { display: none;}
+  footer p { margin: 0; }
 }

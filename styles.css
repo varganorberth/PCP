@@ -174,7 +174,7 @@
 }
 
 #opening, #draft-proposal {
-  min-height: 4rem;
+  min-height: 5rem;
 }
 #carrots, #sticks {
   width: calc( 100% - 7.3rem );
@@ -260,7 +260,8 @@ a, a:visited {
 }
 
 .tabs label.container {
-  display: block;
+  display: flex;
+  justify-content: flex-start;
   position: relative;
   margin-bottom: 5px;
   cursor: pointer;
