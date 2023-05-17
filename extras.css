@@ -154,7 +154,7 @@ input:focus, textarea:focus {
   align-items: center;
 }
 
-footer {
+.bottom {
   text-align: center;
   height: 6rem;
   display: flex;
