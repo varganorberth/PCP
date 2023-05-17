@@ -10,7 +10,7 @@
   h4, input, textarea, select, option { font-size: 0.7rem; }
   p { font-size: 0.6rem; }
   .wrapper { padding: 0rem }
-  .btn, .extra-space, .info-icon { display: none; }
+  .btn, .extra-space, .info-icon, header, footer { display: none; }
   input, textarea, select, option {
     outline: none;
     border: none;
