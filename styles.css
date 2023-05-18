@@ -388,3 +388,6 @@ input:-internal-autofill-selected {
   justify-content: center;
   align-items: center;
 }
+.private-notes {
+  display: none;
+}

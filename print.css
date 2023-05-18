@@ -3,6 +3,10 @@
     size: A4 portrait;
     margin:1cm;
   }
+  .pagebreak {
+    clear: both;
+    page-break-after: always;
+  }
   body, * { font-family: 'Helvetica', 'Arial', sans-serif; }
   h1 { font-size: 1.3rem; }
   h2, .tabs label { font-size: 1.1rem; }
@@ -30,6 +34,10 @@
   .orange-section, .blue-section, .green-section {
     border: none;
   }
+
+  .orange-section h3 { color: var(--orange); }
+  .blue-section h3 { color: var(--blue); }
+  .green-section h3 { color: var(--green); }
 
   #carrots, #sticks, #oa, #ra {
     width: 100%;
@@ -215,7 +223,15 @@
     bottom: 0;
     transform: rotate(35deg);
    }
-
+   .private-notes { display: block;}
+   hr {
+    border: none;
+    border-top: 1px dotted var(--darkGrey);
+    color: #fff;
+    background-color: #fff;
+    height: 30px;
+    width: 100%;
+   }
 
 
 
