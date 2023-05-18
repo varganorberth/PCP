@@ -388,6 +388,6 @@ input:-internal-autofill-selected {
   justify-content: center;
   align-items: center;
 }
-.private-notes, .discover-heading, #date {
+.private-notes, .margin-top-page-two, #date {
   display: none;
 }

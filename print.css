@@ -7,7 +7,7 @@
     clear: both;
     page-break-after: always;
   }
-  .discover-heading { margin-top: 1cm; height: 0; display: initial;}
+  .margin-top-page-two { margin-top: 1cm; height: 0; display: initial;}
   body { margin: 1cm;}
   body, * { font-family: 'Helvetica', 'Arial', sans-serif; }
   h1 { font-size: 1.3rem; }
