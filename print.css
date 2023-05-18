@@ -10,7 +10,7 @@
   h4, input, textarea, select, option { font-size: 0.7rem; }
   p { font-size: 0.6rem; }
   .wrapper { padding: 0rem }
-  .btn, .extra-space, .info-icon, header, footer { display: none; }
+  .btn, .extra-space, .info-icon, header, footer, .first-assist-wrapper { display: none; }
   input, textarea, select, option {
     outline: none;
     border: none;
@@ -26,6 +26,9 @@
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
+  }
+  .orange-section, .blue-section, .green-section {
+    border: none;
   }
 
   #carrots, #sticks, #oa, #ra {
@@ -72,12 +75,41 @@
     -webkit-print-color-adjust: exact; 
     background-color: var(--green) !important;
   }
-
-  .tabs label {
-    border-bottom: 4px solid var(--green);
-    color: var(--green);
-    padding: 0.5rem;
+  .section-title {
+    justify-content: center;
   }
+  .section-title{
+    clip-path: polygon(0% 0%, 97% 0%, 100% 50%, 97% 100%, 0% 100%);
+  }
+
+  .tabs-block { margin: 10px;}
+  .tabs [type=radio]:checked + label, .tabs label {
+    border: 2px solid var(--green);
+    border-right: 0;
+    color: var(--green);
+    padding: 0.3rem;
+    margin-right: 18px;
+  }
+  .tabs .tab-heading:after {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid var(--green);
+    border-bottom: 0px solid var(--green);
+    border-left: 0px solid var(--green);
+    border-right: 2px solid var(--green);
+    top: calc(50% - 12.5px);
+    left: calc( 100% - 12.5px);
+    content: "";
+    transform: rotate(45deg);
+    background-color: transparent;
+  }
+
+
+
+
+
+
 
 .checkboxes-wrapper label { color: var(--black);}
 
@@ -161,4 +193,30 @@
   }
   .bottom br { display: none;}
   .bottom p { margin: 0; }
+
+  .print-tab-arrow {
+    width: 1rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+  }
+   .border-line {
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    transform-origin: 0% 0%;
+    background-color: var(--green);
+   }
+   .border-line.top-line {
+    top: 0;
+    transform: rotate(-35deg);
+   }
+   .border-line.bottom-line {
+    bottom: 0;
+    transform: rotate(35deg);
+   }
+
+
+
+
 }
