@@ -47,3 +47,13 @@ function closeOverlay(event) {
   overlay.childNodes[1].src = src; // bring bak the source of the video
 }
 
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+var date = document.getElementById("date")
+
+today = mm + '/' + dd + '/' + yyyy;
+
+date.innerHTML = 'Printed on:' + today;
+

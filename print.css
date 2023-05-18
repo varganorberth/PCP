@@ -1,16 +1,18 @@
 @media print {
   @page {
-    size: A4 portrait;
-    margin:1cm;
+    margin:0;
+    size: auto;
   }
   .pagebreak {
     clear: both;
     page-break-after: always;
   }
+  .discover-heading { margin-top: 1cm; height: 0; display: initial;}
+  body { margin: 1cm;}
   body, * { font-family: 'Helvetica', 'Arial', sans-serif; }
   h1 { font-size: 1.3rem; }
   h2, .tabs label { font-size: 1.1rem; }
-  h3, .checkboxes-wrapper label { font-size: 0.9rem; }
+  h3, .checkboxes-wrapper label, .page-title { font-size: 0.9rem; }
   h4, input, textarea, select, option { font-size: 0.7rem; }
   p { font-size: 0.6rem; }
   .wrapper { padding: 0rem }
@@ -33,6 +35,9 @@
   }
   .orange-section, .blue-section, .green-section {
     border: none;
+  }
+  #date {
+    display: initial;
   }
 
   .orange-section h3 { color: var(--orange); }
@@ -232,7 +237,16 @@
     height: 30px;
     width: 100%;
    }
-
-
-
+   option[value=''] {
+    color: transparent !important;
+    display: none;
+    text-indent: -100px;
+    opacity: 0;
+  }
+  select option[disabled] {
+    display: none!important;
+  }
+  .text-right {
+    text-align: right;
+  }
 }

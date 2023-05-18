@@ -377,7 +377,7 @@ input:-internal-autofill-selected {
   visibility: visible;
 }
 
-.discver-row textarea, .discover-heading {
+.discver-row textarea, .discover-subheading {
   width: calc( 50% - 0.5rem);
 }
 
@@ -388,6 +388,6 @@ input:-internal-autofill-selected {
   justify-content: center;
   align-items: center;
 }
-.private-notes {
+.private-notes, .discover-heading, #date {
   display: none;
 }
