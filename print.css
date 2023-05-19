@@ -15,7 +15,7 @@
   h3, .checkboxes-wrapper label, .page-title { font-size: 0.9rem; }
   h4, input, textarea, select, option { font-size: 0.7rem; }
   p { font-size: 0.6rem; }
-  .wrapper { padding: 0rem }
+  .sections-wrapper { margin: 0rem; }
   .btn, .extra-space, .info-icon, header, footer, .first-assist-wrapper { display: none; }
   input, textarea, select, option {
     outline: none;
@@ -118,12 +118,6 @@
     background-color: transparent;
   }
 
-
-
-
-
-
-
 .checkboxes-wrapper label { color: var(--black);}
 
   .special-flex {
@@ -181,13 +175,13 @@
     justify-content: flex-start;
   }
   .objection-row textarea, .objection-row .objection-heading, .objection-row .notes-heading {
-    width: calc( 50% - 6rem);
+    width: calc( 50% - 5rem);
   }
   .objection-row select, .objection-row .strategy-heading {
-    width: 12rem;
+    width: 10rem;
   }
   #opening, #draft-proposal {
-    min-height: 0rem;
+    min-height: 0rem!important;
   }
   .arrow-wrapper {
     display: none;
